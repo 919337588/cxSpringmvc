@@ -86,7 +86,6 @@ public class CxDispatcherServlet extends HttpServlet {
         req.getRequestDispatcher(prefix + pageName + suffix).forward(req, res);
     }
 
-    // 手写springboot 手写springcloud -----手写分布式配置中心
     private Object methodInvoke(Object object, Method method) {
         try {
             Object result = method.invoke(object);
